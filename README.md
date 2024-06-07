@@ -25,14 +25,23 @@ mechatronics. Here special focus will be on the modelling of the robotic system 
 
 # Response before applying PID Control   
 ![image](https://github.com/mohamed-alaa-saber/TWO-WHEELED-SELF-BALANCING-ROBOT/assets/77857955/316fbfd2-fd20-4204-8321-e5d41d71f294)
+
 The plot shows that Response is unstable, as response increases to infinity with time.
+
 ![image](https://github.com/mohamed-alaa-saber/TWO-WHEELED-SELF-BALANCING-ROBOT/assets/77857955/91445d88-041d-4386-9002-38532cf5a1e8)
+
 The system has 3 poles (two at left, one at right) (P1(-12.4), P2(-0.25),P3(12.3)), 1 zeros(marginal zero)  
+
 ![image](https://github.com/mohamed-alaa-saber/TWO-WHEELED-SELF-BALANCING-ROBOT/assets/77857955/427bd863-0cef-47fb-b44d-4e0fa58e669e)
+
 Take-off point (-2.72), while there is a pole on the right, the system is unstable.
+
 ![image](https://github.com/mohamed-alaa-saber/TWO-WHEELED-SELF-BALANCING-ROBOT/assets/77857955/fc36ec3d-4ba5-4adb-9c61-128895c7de30)
+
 No rotation about -1, but there is a pole on right, so the system is unstable. (Z=N+P = 1)
+
 ![image](https://github.com/mohamed-alaa-saber/TWO-WHEELED-SELF-BALANCING-ROBOT/assets/77857955/b395aef7-829e-4b07-ada8-c5b1373c990e)
+
 From our study, (if system have any negative in phase margin or gain margin or both are negative, system is unstable). In the previous plot the gain margin equals a negative number so the system is unstable. 
 
 
@@ -51,15 +60,19 @@ Ki 50
 ![image](https://github.com/mohamed-alaa-saber/TWO-WHEELED-SELF-BALANCING-ROBOT/assets/77857955/02aab6a8-6443-48c5-b2ca-0578e2b45fdd)
 
 ![image](https://github.com/mohamed-alaa-saber/TWO-WHEELED-SELF-BALANCING-ROBOT/assets/77857955/907999a4-a659-43b6-9268-7bc4dc23a45d)
+
 The system has 4 poles (all at left) (P1(-26.4-18.3j), P2(-26.4+18.3j), P3(-1.85),P4(0)), 3 zeros(Z1(-21.9),Z2(-1.63),Z3(0))   
 
 ![image](https://github.com/mohamed-alaa-saber/TWO-WHEELED-SELF-BALANCING-ROBOT/assets/77857955/c934fa47-fdc9-45c9-a09f-6d544ca9580a)
+
  Take-off point (-40.7), there is not pole on the right, the system is stable forever.
 
  ![image](https://github.com/mohamed-alaa-saber/TWO-WHEELED-SELF-BALANCING-ROBOT/assets/77857955/14168427-0162-419c-9041-e22ab283e2e4)
+ 
  No rotation about -1, there is no poles on right, so the system is stable. (Z=N+P = 0) 
 
  ![image](https://github.com/mohamed-alaa-saber/TWO-WHEELED-SELF-BALANCING-ROBOT/assets/77857955/b16701e5-f263-45f4-a42a-e759881a4ce3)
+ 
 From our study, (if both are positive system is stable), In the previous plot the gain margin and the phase margin equal a positive number so the system is stable. 
 
 
