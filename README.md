@@ -17,49 +17,50 @@ mechatronics. Here special focus will be on the modelling of the robotic system 
 # Modeling
 ![image](https://github.com/mohamed-alaa-saber/TWO-WHEELED-SELF-BALANCING-ROBOT/assets/77857955/4036ab1e-8545-4f83-a68d-1134e2a442a8)
 
-∑𝐹𝑥=0 
-�
-�−𝒃𝒙−𝑴𝒙−𝒎𝒙−𝒎𝒍𝜽𝒄𝒐𝒔𝜽+𝒎𝒍𝜽𝟐𝒔𝒊𝒏𝜽=𝟎                    (1)  
-∑𝐹𝑦=0 
-�
-�𝒈+𝒎𝒈−𝒎𝒍𝜽𝒔𝒊𝒏𝜽+𝒎𝒍𝜽𝟐𝒄𝒐𝒔𝜽=𝟎                                    (2) 
-∑𝑀𝐴=0 
-�
-�𝒈𝒍𝒔𝒊𝒏𝜽+𝑰𝜽+𝒎𝒍𝟐𝜽+𝒎𝒍𝒙𝒄𝒐𝒔𝜽=𝟎                                    (3) 
-Equations (1), (2), and (3) are combined, hence the force equation is obtained alone the 
-horizontal and vertical directions, 
-(𝑰+𝒎𝒍𝟐)𝜽+𝒎𝒈𝒍𝒔𝒊𝒏𝜽=−𝒎𝒍𝒙𝒄𝒐𝒔𝜽                                      (4) 
-(𝑴+𝒎)𝒙+𝒃𝒙+𝒎𝒍𝜽𝒄𝒐𝒔𝜽−𝒎𝒍𝜽𝟐𝒔𝒊𝒏𝜽=𝑭                        (5) 
-Equations (4) and (5) are two linear equations of the transfer function, 
- where 𝑞=𝜋. With assumption 𝜃=𝜋+∅, 
-�
-�𝒐𝒔𝜽=−𝟏                                                                                  (6) 
-�
-�𝒊𝒏𝜽=−∅                                                                                  (7) 
-�
-�𝟐
- 𝒅𝒕𝟐
- =𝟎                                                                                         (8) 
-After Processing the equations (6), (7) and (8) approach to non-linear, then we obtained two 
-variations of motion equations. The U value represents the input, 
-(𝑰+𝒎𝒍)𝟐∅−𝒎𝒈𝒍∅=𝒎𝒍𝒙                                                       (9) 
-(𝑴+𝒎)𝒙+𝒃𝒙+𝒎𝒍∅=𝑼                                                       (10) 
-14 
- 
-By applying Laplace transform on equations (9) and (10), 
-(𝑰+𝒎𝒍𝟐)∅(𝒔)𝒔𝟐−𝒎𝒈𝒍∅(𝒔)=𝒎𝒍𝑿(𝒔)𝒔𝟐                                 (11) 
-(𝑴+𝒎)𝑿(𝒔)𝒔𝟐+𝒃𝑿(𝒔)𝒔+𝒎𝒍∅(𝒔)𝒔𝟐=𝑼(𝒔)                          (12) 
-We yielded the transfer function for TWBMR from the equations (11) and (12). 
-∅(𝒔)
- 𝑼(𝒔)
- =
- 𝒎𝒍
- 𝒒 𝑺
- 𝑺𝟑+𝒃(𝑰+𝒎𝒍𝟐)
- 𝒒 𝑺𝟐−(𝑴+𝒎)𝒎𝒈𝒍
- 𝒒 𝑺−𝒃𝒎𝒈𝒍
- 𝒒
-                             (13) 
-Where 𝒒=[(𝑴+𝒎)(𝑰+𝒎𝒍𝟐)−(𝒎𝒍)𝟐]
+![image](https://github.com/mohamed-alaa-saber/TWO-WHEELED-SELF-BALANCING-ROBOT/assets/77857955/bb72425e-7952-4658-ab0a-a5558f6ac4d0)
+
+![image](https://github.com/mohamed-alaa-saber/TWO-WHEELED-SELF-BALANCING-ROBOT/assets/77857955/8da4d086-f76b-4332-87f6-2906070fca99)
+
+![image](https://github.com/mohamed-alaa-saber/TWO-WHEELED-SELF-BALANCING-ROBOT/assets/77857955/dc1d188e-0a1f-42fc-b9a8-cb5a0e2dcd45)
+
+# Response before applying PID Control   
+![image](https://github.com/mohamed-alaa-saber/TWO-WHEELED-SELF-BALANCING-ROBOT/assets/77857955/316fbfd2-fd20-4204-8321-e5d41d71f294)
+The plot shows that Response is unstable, as response increases to infinity with time.
+![image](https://github.com/mohamed-alaa-saber/TWO-WHEELED-SELF-BALANCING-ROBOT/assets/77857955/91445d88-041d-4386-9002-38532cf5a1e8)
+The system has 3 poles (two at left, one at right) (P1(-12.4), P2(-0.25),P3(12.3)), 1 zeros(marginal zero)  
+![image](https://github.com/mohamed-alaa-saber/TWO-WHEELED-SELF-BALANCING-ROBOT/assets/77857955/427bd863-0cef-47fb-b44d-4e0fa58e669e)
+Take-off point (-2.72), while there is a pole on the right, the system is unstable.
+![image](https://github.com/mohamed-alaa-saber/TWO-WHEELED-SELF-BALANCING-ROBOT/assets/77857955/fc36ec3d-4ba5-4adb-9c61-128895c7de30)
+No rotation about -1, but there is a pole on right, so the system is unstable. (Z=N+P = 1)
+![image](https://github.com/mohamed-alaa-saber/TWO-WHEELED-SELF-BALANCING-ROBOT/assets/77857955/b395aef7-829e-4b07-ada8-c5b1373c990e)
+From our study, (if system have any negative in phase margin or gain margin or both are negative, system is unstable). In the previous plot the gain margin equals a negative number so the system is unstable. 
+
 
 # PID control
+
+Transfer Function after the PID 
+Kp  33 
+Kd 1.4 
+Ki 50
+![image](https://github.com/mohamed-alaa-saber/TWO-WHEELED-SELF-BALANCING-ROBOT/assets/77857955/02f242c2-2ada-415c-b1b5-f4b07abbc4c8)
+![image](https://github.com/mohamed-alaa-saber/TWO-WHEELED-SELF-BALANCING-ROBOT/assets/77857955/f4c5f205-ccfc-4f3b-86f4-ddb2916d9f18)
+![image](https://github.com/mohamed-alaa-saber/TWO-WHEELED-SELF-BALANCING-ROBOT/assets/77857955/28fded57-8ae5-4757-9819-aa8912adfe27)
+
+# Response after applying PID Control 
+![image](https://github.com/mohamed-alaa-saber/TWO-WHEELED-SELF-BALANCING-ROBOT/assets/77857955/f2276d54-7092-49c3-8424-dcf135bd8f00)
+![image](https://github.com/mohamed-alaa-saber/TWO-WHEELED-SELF-BALANCING-ROBOT/assets/77857955/02aab6a8-6443-48c5-b2ca-0578e2b45fdd)
+
+![image](https://github.com/mohamed-alaa-saber/TWO-WHEELED-SELF-BALANCING-ROBOT/assets/77857955/907999a4-a659-43b6-9268-7bc4dc23a45d)
+The system has 4 poles (all at left) (P1(-26.4-18.3j), P2(-26.4+18.3j), P3(-1.85),P4(0)), 3 zeros(Z1(-21.9),Z2(-1.63),Z3(0))   
+
+![image](https://github.com/mohamed-alaa-saber/TWO-WHEELED-SELF-BALANCING-ROBOT/assets/77857955/c934fa47-fdc9-45c9-a09f-6d544ca9580a)
+ Take-off point (-40.7), there is not pole on the right, the system is stable forever.
+
+ ![image](https://github.com/mohamed-alaa-saber/TWO-WHEELED-SELF-BALANCING-ROBOT/assets/77857955/14168427-0162-419c-9041-e22ab283e2e4)
+ No rotation about -1, there is no poles on right, so the system is stable. (Z=N+P = 0) 
+
+ ![image](https://github.com/mohamed-alaa-saber/TWO-WHEELED-SELF-BALANCING-ROBOT/assets/77857955/b16701e5-f263-45f4-a42a-e759881a4ce3)
+From our study, (if both are positive system is stable), In the previous plot the gain margin and the phase margin equal a positive number so the system is stable. 
+
+
+
