@@ -8,3 +8,5 @@ mechatronics. Here special focus will be on the modelling of the robotic system 
 
 The design and components of a self-balancing robot are detailed, emphasizing the use of sensors, actuators, and control algorithms to maintain an upright position. Essential components include a structural frame, an Arduino UNO microcontroller for data processing, an MPU 6050 sensor for orientation and acceleration measurement, an L298N motor driver for controlling DC geared motors, a battery for power, a switch for power management, an HC-05 Bluetooth module for wireless communication, and wiring and wheels for electrical connections and mobility. The design process incorporates SolidWorks for mechanical design and a PID control algorithm, with block diagrams illustrating the system architecture and demonstrating improved balancing performance post-PID implementation. Applications of this technology include self-balancing unicycles, bikes, Segway robots, hoverboards, and wheelchairs.
 ![02](https://github.com/mohamed-alaa-saber/TWO-WHEELED-SELF-BALANCING-ROBOT/assets/77857955/a8b32c2f-4d74-452a-9bf8-1c92bc2e7d86)
+
+# Flowchart 
