@@ -48,9 +48,13 @@ From our study, (if system have any negative in phase margin or gain margin or b
 # PID control
 
 Transfer Function after the PID 
-Kp  33 
-Kd 1.4 
-Ki 50
+
+Kp      33 
+
+Kd      1.4 
+
+Ki      50
+
 ![image](https://github.com/mohamed-alaa-saber/TWO-WHEELED-SELF-BALANCING-ROBOT/assets/77857955/02f242c2-2ada-415c-b1b5-f4b07abbc4c8)
 ![image](https://github.com/mohamed-alaa-saber/TWO-WHEELED-SELF-BALANCING-ROBOT/assets/77857955/f4c5f205-ccfc-4f3b-86f4-ddb2916d9f18)
 ![image](https://github.com/mohamed-alaa-saber/TWO-WHEELED-SELF-BALANCING-ROBOT/assets/77857955/28fded57-8ae5-4757-9819-aa8912adfe27)
