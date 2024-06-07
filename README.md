@@ -56,11 +56,15 @@ Kd      1.4
 Ki      50
 
 ![image](https://github.com/mohamed-alaa-saber/TWO-WHEELED-SELF-BALANCING-ROBOT/assets/77857955/02f242c2-2ada-415c-b1b5-f4b07abbc4c8)
+
 ![image](https://github.com/mohamed-alaa-saber/TWO-WHEELED-SELF-BALANCING-ROBOT/assets/77857955/f4c5f205-ccfc-4f3b-86f4-ddb2916d9f18)
+
 ![image](https://github.com/mohamed-alaa-saber/TWO-WHEELED-SELF-BALANCING-ROBOT/assets/77857955/28fded57-8ae5-4757-9819-aa8912adfe27)
 
 # Response after applying PID Control 
+
 ![image](https://github.com/mohamed-alaa-saber/TWO-WHEELED-SELF-BALANCING-ROBOT/assets/77857955/f2276d54-7092-49c3-8424-dcf135bd8f00)
+
 ![image](https://github.com/mohamed-alaa-saber/TWO-WHEELED-SELF-BALANCING-ROBOT/assets/77857955/02aab6a8-6443-48c5-b2ca-0578e2b45fdd)
 
 ![image](https://github.com/mohamed-alaa-saber/TWO-WHEELED-SELF-BALANCING-ROBOT/assets/77857955/907999a4-a659-43b6-9268-7bc4dc23a45d)
